@@ -7,6 +7,7 @@ import egor_compressed_for_web from "../../../public/egor_compressed_for_web.jpe
 import FixPaddingButton from "./FixPaddingComponent";
 import { StyledModal } from "./StyledModal";
 
+import React from "react";
 
 interface PhotoModalProps {
   onClose: () => void;
