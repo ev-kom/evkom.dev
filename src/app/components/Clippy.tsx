@@ -28,7 +28,7 @@ const Clippy = memo(() => {
       clippy?.speak(randomTalk, false);
       clippy?.animate();
       clippy?.play("Wave");
-    }, 100_000);
+    }, 30_000);
 
     return () => clearInterval(interval);
   }, [clippy]);

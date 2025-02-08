@@ -59,7 +59,7 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
           >
             React95 NEXT.js template
           </a>
-          , React95 is a component library inspired on the Windows 95 UI design.
+          , React95 is a component library inspired by the Windows 95 UI design.
         </p>
         <p>
           Shoutout to{" "}
