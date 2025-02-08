@@ -28,7 +28,7 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
       dragOptions={{
         legacyTranslate: false,
         defaultPosition: {
-          x: 200,
+          x: 0,
           y: 100,
         },
       }}
