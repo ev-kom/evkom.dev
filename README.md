@@ -6,7 +6,7 @@ This website was built with [React95 NEXT.js template](https://github.com/React9
 
 Shoutout to [Janne Koivisto's portfolio website](https://janneilkka.com/) I accidentally stumbled upon that inspired me to build this website.
 
-[Background](https://windowswallpaper.miraheze.org/wiki/File:Clouds_(Windows_95).png) by WindowsAesthetics / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+[Background](<https://windowswallpaper.miraheze.org/wiki/File:Clouds_(Windows_95).png>) by WindowsAesthetics / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## Next.js
 
