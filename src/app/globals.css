@@ -3,19 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: url("/sky_tile.gif");
 }
 
 body {
-  color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-size: 25%; /* Resizes the image to be twice its original size */
+  /* Ensures the image is not resized */
+  background-repeat: repeat;
+  /* Repeats the image to fill the background */
+  background-position: top left;
+  /* Starts tiling from the top left corner */
 }
