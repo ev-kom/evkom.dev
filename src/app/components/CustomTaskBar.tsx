@@ -1,8 +1,10 @@
+"use client";
+
+import React from "react";
+
 import { List, TaskBar } from "@react95/core";
 import { FileText, User } from "@react95/icons";
 import LinkedInLogo from "./LinkedInLogo";
-
-import React from "react";
 
 interface CustomTaskBarProps {
   openPhoto: () => void;
@@ -12,6 +14,7 @@ interface CustomTaskBarProps {
 const CustomTaskBar = ({ openPhoto, openReadme }: CustomTaskBarProps) => {
   return (
     <TaskBar
+      key="taskbar"
       list={
         <List>
           <List.Item key="README.txt" icon={<FileText />} onClick={openReadme}>

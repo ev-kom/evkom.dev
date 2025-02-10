@@ -1,16 +1,13 @@
+"use client";
+
+import React from "react";
+
 import { memo } from "react";
 import { useClippy } from "@react95/clippy";
 import { Cursor } from "@react95/core";
 import { useEffect } from "react";
 
-import React from "react";
-
 const talks = [
-  "How can I help you?",
-  "Nice day!",
-  "Glad to meet you.",
-  "At your service",
-  "Helloo",
   "Wie kann ich dir helfen?",
   "Schönen Tag!",
   "Freut mich, dich kennenzulernen.",

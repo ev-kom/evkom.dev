@@ -1,6 +1,8 @@
+"use client";
+
+import React, { ComponentType } from "react";
+
 import styled from "styled-components";
-import { ComponentType } from "react";
-import React from "react";
 
 const StyledFixPaddingComponent = styled.button<{
   style?: React.CSSProperties;

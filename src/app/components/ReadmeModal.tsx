@@ -1,11 +1,11 @@
 "use client";
 
+import React from "react";
+
 import { Cursor, Modal, TitleBar } from "@react95/core";
 import { FileText } from "@react95/icons";
 import FixPaddingButton from "./FixPaddingComponent";
 import { StyledModal, StyledModalFrame } from "./StyledModal";
-
-import React from "react";
 
 interface ReadmeModalProps {
   onClose: () => void;
@@ -18,7 +18,11 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
       icon={<FileText variant="16x16_4" />}
       title="README.txt"
       titleBarOptions={[
-        <FixPaddingButton key="minimize" Component={Modal.Minimize} />,
+        <FixPaddingButton
+          key="minimize"
+          onClick={() => {}}
+          Component={Modal.Minimize}
+        />,
         <FixPaddingButton
           key="close"
           onClick={onClose}
@@ -43,7 +47,12 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
       //   },
       // ]}
     >
-      <StyledModalFrame lineHeight="1.5rem" boxShadow="$in" bgColor="white">
+      <StyledModalFrame
+        key="readme-frame"
+        lineHeight="1.5rem"
+        boxShadow="$in"
+        bgColor="white"
+      >
         <h1>Hello!</h1>
         <p>
           I&apos;m Egor, java developer who likes to do a web development once

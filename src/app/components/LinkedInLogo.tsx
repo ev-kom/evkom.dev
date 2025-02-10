@@ -1,6 +1,8 @@
+"use client";
+
 import React from "react";
 
-const CustomIcon = (props: object) => {
+const LinkedInLogo = (props: object) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,6 +23,6 @@ const CustomIcon = (props: object) => {
   );
 };
 
-CustomIcon.displayName = "CustomIcon";
+LinkedInLogo.displayName = "LinkedInLogo";
 
-export default CustomIcon;
+export default LinkedInLogo;

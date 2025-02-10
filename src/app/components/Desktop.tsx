@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useCallback, useEffect } from "react";
+import React, { useCallback } from "react";
 import CustomTaskBar from "./CustomTaskBar";
 import PhotoModal from "./PhotoModal";
 import ReadmeModal from "./ReadmeModal";
 
 const Desktop = () => {
-  const [state, setState] = React.useState({ readme: false, photo: false });
+  const [state, setState] = React.useState({ readme: true, photo: false });
 
   const toggleReadme = useCallback(
     (value: boolean) => setState((prev) => ({ ...prev, readme: value })),
@@ -16,10 +16,6 @@ const Desktop = () => {
     (value: boolean) => setState((prev) => ({ ...prev, photo: value })),
     [],
   );
-
-  useEffect(() => {
-    setState((prev) => ({ ...prev, readme: true }));
-  }, []);
 
   return (
     <>

@@ -1,3 +1,5 @@
+"use client";
+
 import { Modal } from "@react95/core";
 import { styled, WebTarget } from "styled-components";
 
