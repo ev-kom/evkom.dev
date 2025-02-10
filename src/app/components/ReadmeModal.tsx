@@ -20,7 +20,7 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
       titleBarOptions={[
         <FixPaddingButton
           key="minimize"
-          onClick={() => {}}
+          onClick={onClose}
           Component={Modal.Minimize}
         />,
         <FixPaddingButton
