@@ -5,6 +5,7 @@ import React from "react";
 import { List, TaskBar } from "@react95/core";
 import { FileText, User } from "@react95/icons";
 import LinkedInLogo from "./LinkedInLogo";
+import GithubLogo from "./GithubLogo";
 
 interface CustomTaskBarProps {
   openPhoto: () => void;
@@ -39,6 +40,19 @@ const CustomTaskBar = ({ openPhoto, openReadme }: CustomTaskBarProps) => {
             }
           >
             LinkedIn
+          </List.Item>
+          <List.Item
+            key="Github"
+            icon={<GithubLogo />}
+            onClick={() =>
+              window.open(
+                "https://github.com/ev-kom/evkom.dev",
+                "_blank",
+                "noopener,noreferrer",
+              )
+            }
+          >
+            Github
           </List.Item>
         </List>
       }
