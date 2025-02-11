@@ -23,6 +23,7 @@ const FixPaddingComponent = ({
 }) => {
   return (
     <StyledFixPaddingComponent
+      className="draggable-cancel"
       as={Component}
       onClick={onClick}
       style={style}

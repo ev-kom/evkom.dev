@@ -31,10 +31,13 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
       ]}
       dragOptions={{
         legacyTranslate: false,
+        gpuAcceleration: false,
+        applyUserSelectHack: true,
         defaultPosition: {
           x: 0,
           y: 100,
         },
+        cancel: ".draggable-cancel",
       }}
       // menu={[
       //   {
