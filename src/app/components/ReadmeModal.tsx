@@ -5,7 +5,7 @@ import React from "react";
 import { Cursor, Modal, TitleBar } from "@react95/core";
 import { FileText } from "@react95/icons";
 import FixPaddingButton from "./FixPaddingComponent";
-import { StyledModal, StyledModalFrame } from "./StyledModal";
+import { CustomModal, CustomModalFrame } from "./CustomModal";
 
 interface ReadmeModalProps {
   onClose: () => void;
@@ -13,7 +13,7 @@ interface ReadmeModalProps {
 
 const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
   return (
-    <StyledModal
+    <CustomModal
       key="readme"
       icon={<FileText variant="16x16_4" />}
       title="README.txt"
@@ -30,27 +30,13 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
         />,
       ]}
       dragOptions={{
-        legacyTranslate: false,
-        gpuAcceleration: false,
-        applyUserSelectHack: true,
         defaultPosition: {
           x: 0,
           y: 100,
         },
-        cancel: ".draggable-cancel",
       }}
-      // menu={[
-      //   {
-      //     name: "File",
-      //     list: (
-      //       <List width="200px">
-      //         <List.Item onClick={onClose}>Exit</List.Item>
-      //       </List>
-      //     ),
-      //   },
-      // ]}
     >
-      <StyledModalFrame
+      <CustomModalFrame
         key="readme-frame"
         lineHeight="1.5rem"
         boxShadow="$in"
@@ -104,8 +90,8 @@ const ReadmeModal = ({ onClose }: ReadmeModalProps) => {
             CC BY-SA 4.0
           </a>
         </p>
-      </StyledModalFrame>
-    </StyledModal>
+      </CustomModalFrame>
+    </CustomModal>
   );
 };
 

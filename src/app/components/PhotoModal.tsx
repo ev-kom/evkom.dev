@@ -7,7 +7,7 @@ import { User } from "@react95/icons";
 import Image from "next/image";
 import egor_compressed_for_web from "../../../public/egor_compressed_for_web.jpeg";
 import FixPaddingButton from "./FixPaddingComponent";
-import { StyledModal } from "./StyledModal";
+import { CustomModal } from "./CustomModal";
 
 interface PhotoModalProps {
   onClose: () => void;
@@ -15,15 +15,11 @@ interface PhotoModalProps {
 
 const PhotoModal = ({ onClose }: PhotoModalProps) => {
   return (
-    <StyledModal
+    <CustomModal
       key="photo"
       title={"egor_compressed_for_web.jpeg"}
       titleBarOptions={[
-        <FixPaddingButton
-          key="minimize"
-          onClick={() => {}}
-          Component={Modal.Minimize}
-        />,
+        <FixPaddingButton key="minimize" Component={Modal.Minimize} />,
         <FixPaddingButton
           key="close"
           Component={TitleBar.Close}
@@ -42,7 +38,7 @@ const PhotoModal = ({ onClose }: PhotoModalProps) => {
           height={596}
         />
       </Frame>
-    </StyledModal>
+    </CustomModal>
   );
 };
 

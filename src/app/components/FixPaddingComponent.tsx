@@ -4,7 +4,7 @@ import React, { ComponentType } from "react";
 
 import styled from "styled-components";
 
-const StyledFixPaddingComponent = styled.button<{
+const StyledFixPaddingButton = styled.button<{
   style?: React.CSSProperties;
 }>`
   padding-inline: unset !important;
@@ -22,7 +22,7 @@ const FixPaddingComponent = ({
   Component?: ComponentType;
 }) => {
   return (
-    <StyledFixPaddingComponent
+    <StyledFixPaddingButton
       className="draggable-cancel"
       as={Component}
       onClick={onClick}
